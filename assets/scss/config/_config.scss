@@ -1,0 +1,55 @@
+/*=================== Google Fonts ======================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+--header-height: 3.5rem;
+
+/* ================== colors ============================ */
+--first-color: hsl(207, 65%, 65%);
+--title-color: hsl(207, 4%, 16%);
+--text-color: hsl(207, 4%, 28%);
+--text-color-light: hsl(207, 4%, 56%);
+--body-color: hsl(207, 4%, 99%);
+--container-color: hsl(207, 4%, 95%);
+
+/* Chang the first number >> Blue:207 - Purper: 250 - Pink: 356 - Teal: 174 */
+--gradient-color: linear-gradient(180deg,
+    hsla(207, 48%, 72%, 0),
+    hsla(207, 65%, 65%, 1));
+
+/* ================== Font ============================ */
+--body-font: 'Poppins', sans-serif;
+--title-font: 'Inter', sans-serif;
+--biggest-font-size: 1.5rem;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size: 0.938rem;
+--samll-font-size: 0.813rem;
+--samller-font-size: 0.75rem;
+--tiny-font-size: 0.625rem;
+
+/* ================== Font weight ============================ */
+--font-meduim: 500;
+--font-semi-bold: 600;
+
+/* ================== z-index ============================ */
+--z-normal: 1;
+--z-tooltip: 10;
+--z-fixed: 100;
+}
+
+/* Responsive */
+@media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.55rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --samll-font-size: 0.875rem;
+        --samller-font-size: 0.813rem;
+        --tiny-font-size: 0.688rem;
+    }
+}
+

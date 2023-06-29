@@ -1,0 +1,40 @@
+/*========================== Base ======================== */
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);  
+    font-size: var(--normal-font-size);   
+    background-color: var(--body-color);
+    color: var(--text-color);
+
+    transition: background 0.6s; //for dark mode
+}
+
+h1,h2,h3 {
+    color: var(--title-color);
+    font-family: var(--title-font);
+    font-weight: var(--font-meduim);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

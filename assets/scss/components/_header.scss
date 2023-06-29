@@ -1,0 +1,103 @@
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    z-index: var(--z-fixed);
+
+    .nav {
+        height: calc(var(--header-height) + 0.5rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--body-color);
+        box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+        padding-inline: 1.5rem;
+        border-radius: 3rem;
+        transition: background 0.6s; //for dark mode
+    
+        .nav_logo {
+            width: 100px; 
+        }
+
+        .nav_menu {
+
+            .nav_list {
+                grid-template-columns: repeat(3, max-content);
+                justify-content: center;
+                gap: 2rem 3rem;
+
+                .nav_item {
+                        
+                    .nav_link {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        row-gap: 0.25rem;
+                        font-size: var(--smaller-font-size);
+                        color: var(--text-color-light);
+                        transition: color 0.3s;
+
+                        &:hover {
+                            color: var(--title-color);
+                        }
+
+                        i {
+                            font-size: 1.25rem;
+                        }
+                    }
+                        /* Active Link */
+                        .active-link {
+                        color: var(--title-color);
+                    }
+                }
+            }
+            .nav_close {
+                font-size: 1.5rem;
+                position: absolute;
+                right: 1.5rem;
+                bottom: 0.7rem;
+                cursor: pointer;
+            }
+        }
+        .nav_buttons {
+            display: flex;
+            align-items: center;
+            column-gap: 1.5rem;
+
+            .chang-theme {
+                font-size: 1.25rem;
+                color: var(--title-color);
+                cursor: pointer;
+                transition: color 0.3s;
+            }
+
+            .nav_toggle {
+                display: flex;
+                font-size: 1.25rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        .nav_menu {
+            position: fixed;
+            width: 96%;
+            left: 0;
+            right: 0;
+            bottom: -60%;
+            margin: 0 auto;
+            background-color: var(--body-color);
+            box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+            padding: 2rem 1.5rem 5rem;
+            border-radius: 2rem;
+            transition: bottom 0.3s;
+            
+        }
+    }
+    /* Show  menu */
+    .show-menu {
+        bottom: 2rem;
+    }
+}

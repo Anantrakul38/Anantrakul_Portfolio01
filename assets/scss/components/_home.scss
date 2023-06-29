@@ -1,0 +1,84 @@
+.home_container {
+    row-gap: 4rem;
+    padding-top: 2rem;
+
+    .home_data {
+        row-gap: 1.5rem;
+
+        .home_title {
+            text-align: center;
+            font-size: var(--biggest-font-size);
+            letter-spacing: 0.3px;
+            margin-bottom: 0.5rem;
+        }
+
+        .home_blob {
+            position: relative;
+            width: 200px;
+            height: 290px;
+            background-color: var(--body-color);
+            border: 2px solid var(--text-color-light);
+            justify-self: center;
+            border-radius: 6.25rem;
+            place-items: center;
+            transition: background 0.6s; //for dark mode
+
+            .home_profile {
+                width: 170px;
+                height: 260px;
+                background: var(--gradient-color);
+                border-radius: 5.5rem;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+
+                img {
+                    width: 150px;
+                }
+            }
+        }
+
+        .home_social {
+            justify-content: center;
+            display: flex;
+            column-gap: 1.25rem;
+
+            .home_social-link {
+                font-size: 1.25rem;
+                color: var(--text-color-light);
+                transition: color 0.3s;
+
+                &:hover {
+                    color: var(--title-color);
+                }
+            }
+        }
+    }
+
+    .home_info {
+        display: grid;
+        row-gap: 2rem;
+
+        .home_info-title {
+            font-family: var(--body-font);
+            font-size: var(--smaller-font-size);
+            font-weight: 400;
+            color: var(--text-color-light);
+            margin-bottom: 1rem;
+        }
+
+        .home_info-description {
+            font-family: var(--title-font);
+            color: var(--title-color);
+            padding-right: 4rem;
+        }
+    }
+
+    .home_info-number {
+        font-family: var(--title-font);
+        color: var(--title-color);
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+}

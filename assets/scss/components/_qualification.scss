@@ -1,0 +1,46 @@
+.qualification {
+    position: relative;
+
+    .qualification_container {
+        row-gap: 3.5rem;
+    
+        .qualification_content {
+
+            .qualification_title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 0.5rem;
+                font-size: var(--small-font-size);
+                font-weight: var(--font-semi-bold);
+                margin-bottom: 2rem;
+
+                i {
+                    font-size: 1rem;
+                    font-weight: initial;
+                }
+            }
+
+            .qualification_info {
+                display: grid;
+                row-gap: 2rem;
+
+                .qualification_name {
+                    font-size: var(--normal-font-size);
+                    margin-bottom: 1.25rem;
+                }
+
+                .qualification_country,
+                .qualification_year {
+                    display: block;
+                    font-size: var(--small-font-size);
+                    color: var(--text-color-light);
+                }
+
+                .qualification_country {
+                    margin-bottom: 0.35rem;
+                }
+            }
+        }
+    }
+}
